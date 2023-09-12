@@ -1,32 +1,608 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Петрухин Илья</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Петрухин Илья</title>
+  <link type="image/x-icon" href="img/favicon/icons8-rent-windows-11-color-32.png" rel="shortcut icon">
+  <link type="Image/x-icon" href="img/favicon/icons8-rent-windows-11-color-32.png" rel="icon">
+
 </head>
+
 <body>
-    <div class="container">
-        <p>Это странница-заглушка. Скоро здесь появится сайт-визитка, а пока давайте знакомиться.</p>
+  <script>alert("Это тестовый запуск сайта. Возможны баги, но все кнопки, по которым можно связаться, работют.")</script>
+  <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary position-fixed w-100 top-0 ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#main">
+          Elias
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100">
 
-        <h1>Меня зовут Петрухин Илья</h1>
+            <li class="nav-item">
+              <a class="nav-link" href="#bio">Биография</a>
+            </li>
 
-        <h2>Я агент недвижимости из комании Самолет Плюс</h2>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">О себе</a>
+            </li>
 
-        <p>Я помогу вам продать недвижимость максимально дорого, а также купить на 100% подходящую под Ваши параметры.</p>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Портфолио</a>
+            </li> -->
 
-        <p>Может быть у Вас есть знакомый, который хочет продать объект? Замечательно! Порекомендуйте меня вашим знакомым, и я поделюсь с Вами вознаграждением! Будем партнёрами.</p>
+            <li class="nav-item">
+              <a class="nav-link" href="#sale">Объекты на продажу</a>
+            </li>
 
-        <a target="_blank" href="https://wa.me/+79996000612">Mой WhatsApp</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#referal">"Хочу заработать!"</a>
+            </li>
 
-        <a target="_blank" href="https://vk.com/elias0612">Mой VK</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Контакты</a>
+            </li>
 
-        <a target="_blank" href="tel:+79996000612">Позвонить</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <a target="_blank" href="https://samoletplus.ru/astrakhan/">Сайт Агенства недвижимости</a>
+    <div class="main_block" id="main">
+      <img src="img/1.png" alt="">
+      <div class="initials">
+        <h1>Петрухин Илья</h1>
+        <h3>Ваш надёжный партнёр</h3>
+      </div>
     </div>
+
+    <div class="bio mt-5" id="bio">
+
+      <div class="container">
+        <h2 class="text-center ">Биография</h2>
+
+        <p>Не совсем уместно рассказывать о жизни на главной странице, поэтому вот отдельная страничка с биографией :-)
+        </p>
+
+        <a href="bio/bio.html" target="_blank" class="btn btn-dark mt-3">Ссылка на ту самую страничку</a>
+      </div>
+    </div>
+
+    <div class="about mt-5" id="about">
+
+      <div class="container">
+
+        <h2 class="text-center">Чем я занимаюсь</h2>
+
+        <p>Я агент по недвижимости и занимаюсь продажей или покупкой недвижимости для своих клиентов.</p>
+        <p>Целью моей работы является профессиональная помщь в приобретении или продаже объектов недвижимости.</p>
+
+        <h3 class="text-center mt-5">О преимуществах работы со мной</h3>
+
+        <div class="row">
+          <div class="col-12 col-sm-6">
+
+            <div class="accordion" id="accordion">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Мой офис распологается в центре города.
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Это позволяет добраться за 10-15 минут до офиса из любой точки города. Я ценю время своих клиентов и
+                    стараюсь обеспечить все условия, чтобы мои клиенты очень быстро решали все вопросы, связанные с
+                    покукой и
+                    продажей квартир.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Я дорожу своей репутацией.
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Именно поэтому в моей компании сильнейший юридический отдел. Это даёт Вам возможность быть уверенным
+                    в
+                    моих действиях на 100%. Я думаю о своих клиентах! Поэтому у в моём агенстве 4-х этапная юридическая
+                    проверка документов и большой штат юристов.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Мы с вами застрахованы.
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Всякое бывает в жизни, и чтобы это "всякое" не помешало нашим с вами планам, мы застраховали свою
+                    ответственность. Вы можете быть спокойными!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Нам доверяет государство!
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Именно поэтому в моём офисе Вы
+                    можете воспользоваться услугами МФЦ! 4 причины почему это важно:
+                    время, деньги, нервы, риски. Мы берем на себя ответственность быть
+                    партнером власти и гордимся этим!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Мы обладаем самой большой базой юридически чистых объектов.
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Для меня важно помочь Вам подобрать именно ту квартиру, о которой Вы мечтаете.
+                    Поэтому мы постоянно обновляем и расширяем базу
+                    объектов.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Мы собрали самую большую базу покупателей в России.
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Вы спите — мы работаем. Мне важно получить от Вас максимальную
+                    оценку удовлетворенности. Я хочу получить 5 баллов из 5 возможных! Вы еще только начинаете думать, а
+                    покупатели уже готовы обсуждать условия!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Порядка 10ти крупнейших прямо в офисе!
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    В качестве партнеров мы выбрали порядка десяти крупнейших
+                    банков федерального значения: Сбербанк, ВТБ, УралСиб, Абсолют,
+                    Россельхозбанк и др., которые расположены в офисе компании.
+                    Это позволит Вам быстро подать заявку сразу в несколько банков и выбратьнаиболее выгодную ипотеку.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Абсолютно все новостройки и ЖК в одном месте!
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    В самые
+                    короткие сроки вы сможете выбрать новостройку по выгодной цене
+                    от надежного застройщика, не выходя из стен моего офиса.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    Более 800 агентов по недвижимости в нашей сети.
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    При продаже Вашей квартиры будут участвовать все представители моего
+                    агентства, а это ускорит процесс продажи квартиры и быстрее приведет
+                    Вас к Вашей мечте о новой квартире. Более 35 % квартир, продаваемых нами,
+                    находят своих покупателей среди наших же клиентов.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Мой офис - Ваша крепость.
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Проектируя наш офис, мы
+                    50% пространства выделили под переговорные помещения, зоны для
+                    клиентов, оборудованные зоны пересчета наличных средств. Мне
+                    важно, чтобы у нас Вы чувствовали себя как дома!
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-12 col-sm-6">
+
+            <div class="accordion" id="accordion">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Реклама Вашего объекта будет размещена на 37 рекламных
+                    площадках
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Для меня важна скорость продажи вашего объекта, и поэтому я делаю масштабную рекламу Вашей квартиры.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Я прикладываю все усилия, чтобы клиент купил квартиру
+                    выгодно.
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Именно поэтому я договариваюсь с банками о скидках
+                    на ипотеку. Сниженная ставка для Вас — большая радость для меня
+                    и Ваша экономия на сотни тысяч рублей!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Первую сделку мы совершили Более 10 лет назад.
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Мы имеем тот
+                    самый опыт, который не продается. Более 10 лет мы формируем цивилизованный рынок недвижимости, где
+                    клиент
+                    полностью защищен
+                    от всех возможных юридических рисков с продажей недвижимости.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Наш сайт — современный и интеллектуальный.
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    На нём собрано более 6000 юридически чистых объектов. 100% точ-
+                    ность информации позволит Вам быстро решить свой вопрос с любого
+                    устройства.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    1 раз в неделю, по четвергам, я каждому клиенту предоставляю отчет об этапах продажи.
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Вы держите руку на пульсе вместо судорожных мыслеметаний и переживаний. Я действительно делаю
+                    свое дело и поэтому мне есть, что Вам рассказать!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Мы не экономим на сервисе, мы инвестируем в него огром-
+                    ные деньги.
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Мы издаем свою газету, которая на 99% отражает со-
+                    стояние рынка недвижимости, которая бесплатно распространя-
+                    ется среди участников рынка недвижимости во всех МФЦ и других
+                    смежных организациях. Для чего мы это делаем? Мы — Профи и
+                    это важнее всего. Наши клиенты получают все самое лучшее, самые
+                    современные технологии в этой жизни!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Вы знаете, что я сотрудничаю без предоплат?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Я настолько
+                    крут, что точно уверен в своих действиях и в том, что в 10 случаях
+                    из 10 Вы будете довольны моим трудом! Вы получили результат —
+                    я получил гонорар. Честно, достойно, солидно!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Я учусь даже тогда, когда Вы отдыхаете!
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Инвестиции компании в обучение — это приоритет №1. Для чего мы это делаем? Наша
+                    квалификация — это гарантия того, что Вы решите свой вопрос Бы-
+                    стро и с минимальными затратами нервных клеток!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    Средний возраст нашей команды — 33 года.
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Мы молоды, мы
+                    активны, мы не знаем границ... Мы умеем творить чудеса, мы умеем
+                    удивлять своих клиентов. Мы точно знаем, Как делать, Что делать.
+                    Мы — надежный партнер для наших клиентов!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Моя команда — это агенты с более чем 10 летним стажем
+                    работы.
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Даже новичок в нашей команде — это гарант добросовестности отношения к проблемам клиента. Опытные
+                    наставники всегда рядом. Мы самое известное и быстрорастущее агентство недвижимости
+                    России. Отличная Перспектива для Вас уже открыта!
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+    <!-- <div class="portfolio mt-5" id="portfolio">
+      <h2>Кейсы реальных продаж или покупок</h2>
+
+      <div class="case">
+        <img src="" alt="Видимо, интернет слишком медленный, чтобы прогрузить фото, или ошибка в самом сайте">
+        <h3>Краткое описание</h3>
+        <p>подробности</p>
+      </div>
+    </div> -->
+
+    <div class="sale mt-5" id="sale">
+
+      <div class="container">
+        <h2 class="text-center">Тут Вы можете ознакомиться с объектами, которые продаются в данный момент.</h2>
+
+        <div class="row">
+
+          <div class="col-6 col-sm-4 mt-4">
+            <div class="card">
+              <img src="img/objects/perevoznaya.jpg" class="card-img-top"
+                alt="Видимо, интернет слишком медленный, чтобы прогрузить фото, или ошибка в самом сайте">
+              <div class="card-body">
+                <h5 class="card-title">3-к кв рядом с ЖД вокзалом</h5>
+                <p class="card-text">Хорошо подходит для большой семьи. Рядом самая удобная транспортная развязка. <br> 4 500 000 Р </p>
+                <a href="objects/object_1.html" class="btn btn-primary mt-2">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-6 col-sm-4 mt-4">
+            <div class="card">
+              <img src="img/zglshk.jpg" class="card-img-top"
+                alt="Видимо, интернет слишком медленный, чтобы прогрузить фото, или ошибка в самом сайте">
+              <div class="card-body">
+                <h5 class="card-title">3-к кв рядом с ЖД вокзалом</h5>
+                <p class="card-text">Хорошо подходит для большой семьи. Рядом самая удобная транспортная развязка.</p>
+                <a href="objects/object_1.html" class="btn btn-primary mt-2">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 mt-4">
+            <div class="card">
+              <img src="img/zglshk.jpg" class="card-img-top"
+                alt="Видимо, интернет слишком медленный, чтобы прогрузить фото, или ошибка в самом сайте">
+              <div class="card-body">
+                <h5 class="card-title">3-к кв рядом с ЖД вокзалом</h5>
+                <p class="card-text">Хорошо подходит для большой семьи. Рядом самая удобная транспортная развязка.</p>
+                <a href="#" class="btn btn-primary mt-2">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 mt-4">
+            <div class="card">
+              <img src="img/zglshk.jpg" class="card-img-top"
+                alt="Видимо, интернет слишком медленный, чтобы прогрузить фото, или ошибка в самом сайте">
+              <div class="card-body">
+                <h5 class="card-title">3-к кв рядом с ЖД вокзалом</h5>
+                <p class="card-text">Хорошо подходит для большой семьи. Рядом самая удобная транспортная развязка.</p>
+                <a href="#" class="btn btn-primary mt-2">Посмотреть</a>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="referal mt-5" id="referal">
+      <div class="container">
+        <h2 class="text-center">Есть знакомые, продающие или ищущие недвижимость?</h2>
+        <p>У Вас есть прекрасная возможность помочь своим знакомым и заработать самим!</p>
+        <p>Просто познакомьте нас. И после успешного совершения сделки я поделюсь с Вами вознаграждением!</p>
+        <p>Как итог - все довольны. Знакомый исполнил мечту, Вы получили бонус, я выполнил работу!</p>
+
+        <p>
+          <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Связаться
+          </button>
+      </p>
+      <div class="collapse mt-1" id="collapseExample">
+          <div class="card card-body">
+              <a target="_blank" href="https://wa.me/+79996000612" class="btn btn-info">Whatsapp</a>
+              <a target="_blank" href="tel:+79996000612" class="btn btn-info mt-3">Позвонить</a>
+              <a target="_blank" href="https://t.me/@IlyaAlekseevich00" class="btn btn-info mt-3">Telegram</a>
+              <a target="_blank" href="https://vk.com/elias0612" class="btn btn-info mt-3">VK</a>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="contact mt-5 mb-5" id="contacts">
+      <div class="container">
+        <h3 class="text-center">Вы можете связаться со мной любым удобным способом!</h3>
+
+        <div class="row">
+
+
+          <div class="connect col-6 col-sm-3 mt-4">
+            <img src="" alt="">
+            <a target="_blank" href="tel:+79996000612"><i class="bi bi-telephone"> Позвонить</i></a>
+          </div>
+
+          <div class="connect col-6 col-sm-3 mt-4">
+            <img src="" alt="">
+            <a target="_blank" href="tel:+79996000612"><i class="bi bi-whatsapp"> Whatsapp</i></a>
+          </div>
+
+          <div class="connect col-6 col-sm-3 mt-4">
+            <img src="" alt="">
+            <a target="_blank" href="https://t.me/@IlyaAlekseevich00"><i class="bi bi-telegram"> Telegram</i></a>
+          </div>
+
+          <div class="connect col-6 col-sm-3 mt-4">
+            <img src="" alt="">
+            <a target="_blank" href="https://vk.com/elias0612">VK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
